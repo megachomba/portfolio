@@ -1,0 +1,38 @@
+.root{
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.button {
+  /*margin-left: 200px;*/
+  
+  /*flex-grow: 1;*/
+}
+.header {
+  background-color: green 
+}
+.bar{
+  background-color: transparent 
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.menuButton {
+  margin-Left: -12;
+  margin-Right: 20;
+}
+
+.divBG {
+  background-image: url(../../../media/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+  /*position: center;
+  height: 90vh;*/
+
+}
