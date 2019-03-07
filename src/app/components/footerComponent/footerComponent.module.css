@@ -1,0 +1,36 @@
+.footer{
+  margin-top: 50px;
+  background-color:#212121;
+  display: flex;
+  /*z-index: 2;*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.hamburgerButton {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  
+}
+.name{
+  background-color: blue;
+  width: 100%;
+}
+
+.menu{
+  background-color: red;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .footer{
+    flex-direction: row;
+  }
+}

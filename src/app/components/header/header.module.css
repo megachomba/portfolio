@@ -1,0 +1,53 @@
+
+
+  .menu{
+    display: none;
+  }
+
+.root{
+  flex-grow: 1;
+  margin-right: 50px;
+}
+.menuButton{
+  display: flex;
+}
+.drawer{
+  background-color: grey;
+}
+.looking{
+  color: #FFFFFF;
+margin: 1.75rem 0 0.875rem;
+    margin-top: 1.75rem;
+display: inline-block;
+position: relative;
+font-size: calc(22px + 3vw);
+margin-top: 30px;
+min-height: 32px;
+font-weight: 700;
+font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo, "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+text-decoration: none;
+}
+.hamburgerButton {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .menuButton{
+    display: none;
+  }
+}
