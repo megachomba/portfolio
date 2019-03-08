@@ -12,7 +12,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
     "primary":{
       "light":"rgba(0, 42, 255, 1)",
-      "main":"rgba(0, 0, 0, 1)",
+      "main":"#212121",
       "dark":"#303f9f",
       "contrastText":"rgba(255, 255, 255, 1)"},
 
