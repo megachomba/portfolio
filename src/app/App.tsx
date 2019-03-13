@@ -6,7 +6,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Home from './pages/home'
 import theme from '../theme'
-import Project from './pages/projects';
+import Project from './pages/project';
 
 export default class App extends Component {
   render() {

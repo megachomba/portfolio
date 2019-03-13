@@ -5,8 +5,7 @@
   padding: 50px;
   /*z-index: 2;*/
   /*justify-content: space-between;*/
-  flex-wrap: no-wrap;
-  flex-direction: column;
+
 }
 .hamburgerButton {
   color: #ffffff;
@@ -21,60 +20,55 @@
   
 }
 .bigBlock{
-  background-color:pink;
+  /*background-color:pink;*/
+  display: flex;
+  flex-direction: column;
 }
 .firstBlock{
   display: flex;
+  flex-direction: row;
   /*justify-content: space-around;*/
 }
 .secondBlock{
   display: flex;
+  flex-direction: row;
   /*justify-content: space-between;*/
 }
 .name{
-  background-color: blue;
-  padding: 50px 50px 50px 50px;
-  flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: 0;
+  /*background-color: blue;*/
+  width:75%;
+  margin:5vh;
+  
+
+
 
 }
 .photo{
-  background-color: green;
-  padding: 50px 50px 50px 50px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
+  /*background-color: green;*/
+  width:25%;
+  margin:5vh;
+  
+
+  
 }
 .menu{
-  background-color: red;
-  padding: 50px 50px 50px 50px;
-  flex:1
+  /*background-color: red;*/
+  width:33%;
+  margin:5vh;
+  
 }
 .work{
-  background-color: yellow;
-  padding: 50px 50px 50px 50px;
-  flex:1
+  /*background-color: yellow;*/
+  margin:5vh;
+  
 }
 
-@media only screen and (min-width: 768px) {
-  .footer{
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-  .bigBlock {
-    max-width: 720px;
-  }
-}
+@media only screen and (max-width: 768px) {
+  .firstBlock{
+    flex-direction: column;
 
-@media only screen and (min-width: 992px) {
-  .bigBlock {
-    max-width: 960px;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .bigBlock {
-    max-width: 1140px;
+  .secondBlock{
+    flex-direction: column;
   }
 }

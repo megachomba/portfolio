@@ -75,7 +75,7 @@ export default class Header extends React.Component<Props, State> {
       <div>
         <AppBar position='fixed' color='primary' style={ this.headerTransform() }>
           <Toolbar>
-            <Typography variant="h6" color="inherit" className={ styles.root }>Menu</Typography>
+            <Typography variant="h6" color="inherit" className={ styles.root }>Guillaume GUARD</Typography>
             <div className={ styles.menuButton }>
                   <IconButton className={styles.menu} color="inherit" aria-label="Menu" onClick={() => this.toggleDrawer()}>
                     <MenuIcon />
@@ -103,7 +103,7 @@ export default class Header extends React.Component<Props, State> {
               </Link>
             </ListItem>
             <Divider />
-            <ListItem button key='Projets'>
+            <ListItem button key='Projet'>
               <Link to="/project" className={ styles.hamburgerButton }>
                 projets
               </Link>

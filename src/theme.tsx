@@ -27,8 +27,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
       "dark":"#d32f2f",
       "contrastText":"#fff"},
     "text":{
-      "primary":"rgba(0, 0, 0, 0.87)",
-      "secondary":"rgba(0, 0, 0, 0.54)",
+      "primary":"#fff",
+      "secondary":"#474646",
       "disabled":"rgba(0, 0, 0, 0.38)",
       "hint":"rgba(0, 0, 0, 0.38)"}
     }

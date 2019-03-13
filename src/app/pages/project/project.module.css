@@ -1,0 +1,20 @@
+.looking {
+
+  box-sizing: border-box;
+ 
+
+  position: absolute;
+
+  top: 37vh;
+
+  left: 25px;
+  right: 25px;
+
+}
+
+.looking h1 {
+  font-size:calc(23px + 3vw);
+}
+.looking p {
+  font-size:18px;
+}
