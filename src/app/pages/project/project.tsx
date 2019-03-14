@@ -10,6 +10,14 @@ import Parallax from '../../components/parallaxComponent'
 
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography'
+import { CardMedia, Tooltip } from '@material-ui/core';
+
+import MyImage from '../../../media/pubg.png'
+import MyImage2 from '../../../media/portfolio.png'
+import MyImage3 from '../../../media/ikkai.png'
+
+
+
 
 interface Props{
 
@@ -27,6 +35,12 @@ const root = {
 const skills = {
   textAlign: 'center' as align
 }
+
+const StyledToolTip= withStyles({
+  tooltip: {
+    fontSize: '23px'
+  }
+})(Tooltip);
 export default class Project extends React.Component<Props, State> {
 
   render() {
@@ -35,17 +49,46 @@ export default class Project extends React.Component<Props, State> {
         <Header></Header>
         <Parallax>
         <div className={styles.looking} id={styles.inlooking}>
-          <Typography variant='h1' color="textPrimary" > Recent projects</Typography>
+          <Typography variant='h1' color="textPrimary" > Recent projectss</Typography>
           <Typography variant='body1' color="textPrimary"> A collection of projects I've been doing for a while now
             Have an idea for a project & interested in collaborating?</Typography>
         </div>
         </Parallax>
         <div className={globalStyles.card}>
-          <div className={styles.skills}>
-            <Typography variant='h3' color="textSecondary" style={ skills }>skills</Typography>
-            <Typography variant="body1" color="textSecondary" style={ root }>have always been drawn towards web development since the age of 14. Besides my technical skills, here's a list of other things I'm also good at</Typography>
+          <div className={styles.thirdBlock}>
+            <div className={`${styles.skills} ${styles.skillsProject}`}>
+                <Typography variant='h3' color="textSecondary" style={ skills }>Recent</Typography>
+                <Typography variant="body1" color="textSecondary" style={ root }>Click any to for more information</Typography>
 
-          </div>
+              </div>
+            
+              
+              
+              <div className={styles.comunication}>
+                <StyledToolTip title='la description de pubg'>
+                  <CardMedia
+                  component="img"
+                  image={ MyImage }
+                  />
+                </StyledToolTip>
+              </div>
+              <div className={styles.comunication}>
+              <StyledToolTip title='la description du portfolio'>
+                  <CardMedia
+                  component="img"
+                  image={ MyImage2 }
+                  />
+                </StyledToolTip>
+              </div>
+              <div className={styles.comunication}>
+                <StyledToolTip title='la description de ikkai'>
+                  <CardMedia
+                  component="img"
+                  image={ MyImage3 }
+                  />
+                </StyledToolTip>
+              </div>
+            </div>
         </div>
         <Footer/>
       </div>

@@ -6,8 +6,8 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Home from './pages/home'
 import theme from '../theme'
-import Project from './pages/project';
-
+import Project from './pages/project'
+import Portfolio from './pages/project/portfolio'
 export default class App extends Component {
   render() {
     return (
@@ -16,7 +16,8 @@ export default class App extends Component {
           <Provider >
             <Switch>
               <Route exact path='/home' component={ Home }></Route>
-              <Route  path='/project' component={ Project }></Route>
+              <Route  exact path='/project' component={ Project }></Route>
+              <Route  path='/project/portfolio' component={ Portfolio }></Route>
             </Switch>
           </Provider>
         </ParallaxProvider>

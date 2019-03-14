@@ -76,3 +76,9 @@
     width: 100%;
   }
 }
+.thirdBlock{
+  padding-top: 100px;
+  display:flex;
+  flex-wrap: wrap;
+  
+}

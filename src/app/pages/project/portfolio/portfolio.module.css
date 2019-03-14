@@ -35,6 +35,18 @@
   box-sizing: border-box;
 }
 
+.lateral{
+  width: 15%;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+.presentation{
+  width:85%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
 @media only screen and (max-width: 768px) {
   .card{
     flex-direction: column;

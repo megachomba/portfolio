@@ -1,9 +1,11 @@
 import * as React from 'react'
 import styles from './footerComponent.module.css'
+
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import  {Link } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography'
+import MyImage4 from '../../../media/dog.bmp'
 
 import { Toolbar, Button, Divider, Paper } from '@material-ui/core'
 
@@ -35,7 +37,7 @@ export default class FooterComponent extends React.Component<Props, State> {
             <div className={styles.name}>
             <Typography variant="h5" color="textPrimary" style={rootBis} >Guillaume GUARD</Typography></div>
             <div className={styles.photo}>
-              <img src='../../media/pinguin.png' />
+              <img src={MyImage4} />
             </div>
             
           </div>
@@ -45,19 +47,19 @@ export default class FooterComponent extends React.Component<Props, State> {
               <List>
                 <ListItem button key='Home'>
                   <Link to="/Home" className={ styles.hamburgerButton }>
-                  <Typography variant="h6" color="textPrimary" style={root} >HOME</Typography>
+                  <Typography variant="h6" color="textPrimary" style={rootBis} >HOME</Typography>
                   </Link>
                 </ListItem>
                 <Divider />
                 <ListItem button key='CV'>
                   <Link to="/CV" className={ styles.hamburgerButton }>
-                  <Typography variant="h6" color="textPrimary" style={root} >CV</Typography>
+                  <Typography variant="h6" color="textPrimary" style={rootBis} >CV</Typography>
                   </Link>
                 </ListItem>
                 <Divider />
                 <ListItem button key='Projets'>
                   <Link to="/project" className={ styles.hamburgerButton }>
-                  <Typography variant="h6" color="textPrimary" style={root} >Projects</Typography>
+                  <Typography variant="h6" color="textPrimary" style={rootBis} >Projects</Typography>
                   </Link>
                   </ListItem>
                   </List>
@@ -67,13 +69,13 @@ export default class FooterComponent extends React.Component<Props, State> {
               <List>
                 <ListItem button key='github'>
                   <Link to="/github" className={ styles.hamburgerButton }>
-                  <Typography variant="h6" color="textPrimary" style={root} >Github</Typography>
+                  <Typography variant="h6" color="textPrimary" style={rootBis} >Github</Typography>
                   </Link>
                 </ListItem>
                 <Divider />
                 <ListItem button key='Linkedin'>
                   <Link to="Linkeidn" className={ styles.hamburgerButton }>
-                  <Typography variant="h6" color="textPrimary" style={root} >Linkedin</Typography>
+                  <Typography variant="h6" color="textPrimary" style={rootBis} >Linkedin</Typography>
                   </Link>
                 </ListItem>
                   </List>

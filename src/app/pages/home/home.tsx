@@ -5,6 +5,10 @@ import * as React from 'react'
 import Header from '../../components/header'
 import Plx from 'react-plx'
 import Footer from '../../components/footerComponent';
+import MyImage from '../../../media/pubg.png'
+import MyImage2 from '../../../media/portfolio.png'
+import MyImage3 from '../../../media/ikkai.png'
+
 
 import MessageIcon from '@material-ui/icons/Message';
 import GroupIcon from '@material-ui/icons/Group';
@@ -15,9 +19,11 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography'
+import { CardMedia, Popover, Tooltip } from '@material-ui/core';
 
 interface Props {}
-interface State {}
+interface State {
+}
 
  const parallaxData = [
     {
@@ -97,10 +103,18 @@ const looking ={
 
 }
 
+const StyledToolTip= withStyles({
+  tooltip: {
+    fontSize: '23px'
+  }
+})(Tooltip);
+
 export default class Home extends React.Component<Props, State> {
   constructor(props: Props){
     super(props)
-    this.state = {}
+    this.state = {
+    
+    }
   }
   /*<div className={ styles.parallax }>
           <Parallax offsetYMin= {-20} offsetYMax={ +20 } slowerScrollRate= {true}>
@@ -114,6 +128,10 @@ export default class Home extends React.Component<Props, State> {
          
           <h1>| | |</h1>
           </Parallax>*/
+
+ 
+
+
   render() {
     return (
       <div id={styles.big} >
@@ -193,9 +211,42 @@ export default class Home extends React.Component<Props, State> {
             </Typography>
 
           </div>
-          
-        </div>
+          <div className = {styles.thirdBlock}>
+            <div className={styles.skills}>
+              <Typography variant='h3' color="textSecondary" style={ skills }>Recent</Typography>
+              <Typography variant="body1" color="textSecondary" style={ root }>Click any to for more information</Typography>
 
+            </div>
+          
+            
+            
+            <div className={styles.comunication}>
+              <StyledToolTip title='la description de pubg'>
+                <CardMedia
+                component="img"
+                image={ MyImage }
+                />
+              </StyledToolTip>
+            </div>
+            <div className={styles.comunication}>
+              <StyledToolTip title='la description du portfolio'>
+                <CardMedia
+                component="img"
+                image={ MyImage2 }
+                />
+              </StyledToolTip>
+            </div>
+            <div className={styles.comunication}>
+              <StyledToolTip title='la description de ikkai'>
+                <CardMedia
+                component="img"
+                image={ MyImage3 }
+                />
+              </StyledToolTip>
+
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     )
