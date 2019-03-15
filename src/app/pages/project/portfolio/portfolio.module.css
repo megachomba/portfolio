@@ -20,10 +20,12 @@
 }
 
 .thirdBlock{
-  padding-top: 20px;
+
   display:flex;
-  flex-wrap: wrap; 
+  flex-wrap: nowrap; 
   flex-direction: row; 
+  /*background-color: pink;*/
+  width:100%;
   
 }
 .skills{
@@ -36,21 +38,32 @@
 }
 
 .lateral{
-  width: 15%;
+  width: 25%;
   padding: 15px;
   box-sizing: border-box;
+  /*background-color: blueviolet;*/
 
 }
 .presentation{
-  width:85%;
+  width:75%;
   padding: 15px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /*background-color: red;*/
+}
+.bigimage{
+  width: 100%;
+  padding-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   .card{
     flex-direction: column;
     
+  }
+  .presentation{
+    width:100%;
   }
   .comunication{
     width: 100%;
