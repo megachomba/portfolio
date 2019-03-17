@@ -60,18 +60,18 @@ export default class Portfolio extends React.Component<Props, State> {
           <div className={styles.thirdBlock}>
               <div className={styles.lateral}>
               
-                <Typography variant='h5' color="textSecondary" > Année</Typography>
+                <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > Année</Typography>
                 <Typography variant='h6' color="textSecondary" style={{paddingTop: '10x'}} > 2019</Typography>
-                <Typography variant='h5' color="textSecondary" > URL</Typography>
+                <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > URL</Typography>
                 <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}> www.guillaumeguard.fr</Typography>
               </div>
               <div className={styles.presentation}>
               
-                <Typography variant='h5' color="textSecondary" > PRESENTATION</Typography>
+                <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}}> PRESENTATION</Typography>
                 <Techselector/>
                 <img src={MyImage2} className={styles.bigimage}></img>
 
-                <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x'}}>Codebase </Typography>
+                <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x' , fontWeight: 'bold'}}>Codebase </Typography>
                 <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}>
                   A complete revamp of the original portfolio website I had created. You can view the changes in the changelog. Here are some more details:
 

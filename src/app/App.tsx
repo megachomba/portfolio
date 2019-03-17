@@ -15,9 +15,9 @@ export default class App extends Component {
         <ParallaxProvider>
           <Provider >
             <Switch>
-              <Route exact path='/home' component={ Home }></Route>
-              <Route  exact path='/project' component={ Project }></Route>
-              <Route  path='/project/portfolio' component={ Portfolio }></Route>
+              <Route exact path='/home' component={ Home } onUpdate={() => window.scrollTo(0, 0)}></Route>
+              <Route  exact path='/project' component={ Project } onUpdate={() => window.scrollTo(0, 0)}></Route>
+              <Route  path='/project/portfolio' component={ Portfolio } onUpdate={() => window.scrollTo(0, 0)}></Route>
             </Switch>
           </Provider>
         </ParallaxProvider>

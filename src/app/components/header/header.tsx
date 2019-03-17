@@ -29,7 +29,9 @@ const stylesDrawer = {
   }
 }
 
-
+const LinkProject = (props:any) => <Link to="/Project" {...props} />
+const LinkCV = (props:any) => <Link to="/CV" {...props} />
+const LinkHome = (props:any) => <Link to="/home" {...props} />
 
 export default class Header extends React.Component<Props, State> {
   constructor(props: Props){
@@ -82,9 +84,9 @@ export default class Header extends React.Component<Props, State> {
                   </IconButton>
                   </div>
               <div className={ styles.menu }>
-                <Button color='inherit'>Home</Button>
-                <Button color='inherit'>CV/Resume</Button>
-                <Button color='inherit'>Projets</Button>
+                <Button color='inherit'component= {LinkHome}>Home</Button>
+                <Button color='inherit'component= {LinkCV}>CV/Resume</Button>
+                <Button color='inherit' component= {LinkProject} >Projets</Button>
                 
               </div>
           </Toolbar>

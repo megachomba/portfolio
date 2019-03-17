@@ -75,6 +75,12 @@ const StyledToolTip= withStyles({
   }
 })(Tooltip);
 
+const box = {
+  backgroundColor: 'red',
+  color: 'white',
+  boxShadow: 'rgba(0, 0, 0, 0.14) 0px 4px 20px 0px, rgba(255, 152, 0, 0.4) 0px 7px 10px -5px'
+}
+
 
 
 export default class Techselector extends React.Component<Props, State> {
@@ -101,7 +107,7 @@ export default class Techselector extends React.Component<Props, State> {
         <StyledButton 
           variant="contained" 
           color="secondary" 
-          style={(this.state.current==='frontend')? { backgroundColor: 'red', color: 'white'} : { backgroundColor: 'transparent'}} 
+          style={(this.state.current==='frontend')? box : { backgroundColor: 'transparent'}} 
           onClick={(e:any)=>this.handleclick('frontend',0)}>
           Frontend
         <StyledPaint />
@@ -110,7 +116,7 @@ export default class Techselector extends React.Component<Props, State> {
         <StyledButton 
           variant="contained" 
           color="primary" 
-          style={(this.state.current==='backend')? { backgroundColor: 'red', color: 'white'} : { backgroundColor: 'transparent'}} 
+          style={(this.state.current==='backend')? box : { backgroundColor: 'transparent'}} 
           onClick={(e:any)=>this.handleclick('backend',1)}>
           Backend
           <StyledDonut />
@@ -119,7 +125,7 @@ export default class Techselector extends React.Component<Props, State> {
         <StyledButton 
           variant="contained" 
           color="primary" 
-          style={(this.state.current==='devops')? { backgroundColor: 'red', color: 'white'} : { backgroundColor: 'transparent'}} 
+          style={(this.state.current==='devops')? box : { backgroundColor: 'transparent'}} 
           onClick={(e:any)=>this.handleclick('devops',2)}>
           DevOps
         <StyledCloud />

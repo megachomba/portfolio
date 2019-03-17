@@ -130,7 +130,9 @@ export default class Home extends React.Component<Props, State> {
           </Parallax>*/
 
  
-
+  componentDidMount =() =>{
+    window.scrollTo(0, 0)
+  }
 
   render() {
     return (
@@ -226,6 +228,7 @@ export default class Home extends React.Component<Props, State> {
                 component="img"
                 image={ MyImage }
                 />
+               
               </StyledToolTip>
             </div>
             <div className={styles.comunication}>
