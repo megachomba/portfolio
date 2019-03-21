@@ -2,6 +2,7 @@ import styles from './home.module.css'
 import globalStyles from '../../globalStyles.module.css'
 
 import * as React from 'react'
+import {Link} from 'react-router-dom'
 import Header from '../../components/header'
 import Plx from 'react-plx'
 import Footer from '../../components/footerComponent';
@@ -223,29 +224,34 @@ export default class Home extends React.Component<Props, State> {
             
             
             <div className={styles.comunication}>
-              <StyledToolTip title='la description de pubg'>
-                <CardMedia
-                component="img"
-                image={ MyImage }
-                />
-               
-              </StyledToolTip>
+            <Link to='project/pubg'>
+                <StyledToolTip title='la description de pubg'>
+                  <CardMedia
+                  component="img"
+                  image={ MyImage }
+                  />
+                </StyledToolTip>
+            </Link>
             </div>
             <div className={styles.comunication}>
-              <StyledToolTip title='la description du portfolio'>
-                <CardMedia
-                component="img"
-                image={ MyImage2 }
-                />
-              </StyledToolTip>
+              <Link to='project/portfolio'>
+                <StyledToolTip title='la description du portfolio'>
+                  <CardMedia
+                  component="img"
+                  image={ MyImage2 }
+                  />
+                </StyledToolTip>
+              </Link>
             </div>
             <div className={styles.comunication}>
+            <Link to='project/ikkai'>
               <StyledToolTip title='la description de ikkai'>
                 <CardMedia
                 component="img"
                 image={ MyImage3 }
                 />
               </StyledToolTip>
+            </Link>
 
             </div>
           </div>

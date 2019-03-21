@@ -8,6 +8,8 @@ import Footer from '../../../components/footerComponent';
 
 import Parallax from '../../../components/parallaxComponent'
 
+import {Link} from 'react-router-dom'
+
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography'
 import { CardMedia, Tooltip } from '@material-ui/core';
@@ -63,7 +65,7 @@ export default class Portfolio extends React.Component<Props, State> {
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > Année</Typography>
                 <Typography variant='h6' color="textSecondary" style={{paddingTop: '10x'}} > 2019</Typography>
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > URL</Typography>
-                <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}> www.guillaumeguard.fr</Typography>
+                <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}> <a href="http://www.guillaumeguard.fr"> www.guillaumeguard.fr</a></Typography>
               </div>
               <div className={styles.presentation}>
               
@@ -73,12 +75,21 @@ export default class Portfolio extends React.Component<Props, State> {
 
                 <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x' , fontWeight: 'bold'}}>Codebase </Typography>
                 <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}>
-                  A complete revamp of the original portfolio website I had created. You can view the changes in the changelog. Here are some more details:
-
-                      Domain provided by gandi.net
-
-                      Development & deployment is handled entirely via Docker
-                      Uses both the latest versions of ReactJS for the frontend and Django for the backend.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dicta distinctio praesentium, delectus nisi ratione accusantium. Incidunt culpa iusto consectetur repellendus consequuntur, aliquid vero optio vitae minima tempore adipisci in.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et? Veritatis et quae, accusantium maiores unde ducimus odio nemo, at eum minus quam aliquam quis mollitia sit quaerat, non eos.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore culpa quasi rem totam commodi odit et! Qui aperiam voluptatum modi repellendus! Ratione perferendis quibusdam debitis libero excepturi molestiae qui sed?
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quod vitae? Maxime doloremque eos unde, corporis sint temporibus. Perspiciatis officia suscipit explicabo autem quas aliquam ad asperiores eligendi sunt sed!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a ea laboriosam vel molestias rerum, sequi cum possimus nisi. Atque tempora aspernatur voluptatem non rem qui voluptatum quas illum officia?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi sint perspiciatis exercitationem inventore aspernatur vitae unde ex et. Voluptate est harum veritatis explicabo reiciendis! Est cumque culpa recusandae inventore?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum numquam dolores nihil voluptate reiciendis, optio, cupiditate id necessitatibus velit obcaecati est, facere quam. Aut adipisci eius nesciunt cumque dicta.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab exercitationem architecto culpa nobis, provident voluptatibus, ipsam assumenda reprehenderit eveniet consequatur quos accusantium, tempora dolorum maxime tenetur cupiditate laboriosam nesciunt. Sit?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatum tempora explicabo, dignissimos, sapiente sint facere ab fugiat consequuntur commodi non maiores asperiores incidunt dolores numquam dicta quisquam perferendis? Praesentium.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea explicabo eius asperiores labore et sed nisi quisquam. Asperiores animi omnis aspernatur voluptate sit recusandae minima excepturi impedit maxime quis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos reiciendis quidem? Quas quia ipsa dolorum dolores nobis aliquid iste eveniet, nostrum rerum numquam labore dolore ad inventore, laboriosam quidem.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione qui natus adipisci praesentium minima reiciendis sequi odio! Similique libero mollitia accusantium autem quos laudantium quod eveniet nesciunt. Eius, nesciunt.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatibus numquam alias molestiae et deserunt ullam, a ea sed, itaque molestias esse dolores! Temporibus, ullam quod! Aperiam assumenda maiores explicabo?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, animi! Sapiente amet ad, nam omnis non corrupti voluptates minima incidunt. Ad magnam ut cum eius necessitatibus quos, id reiciendis dicta?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quasi dolores, repudiandae perspiciatis vitae debitis! Vero saepe corrupti similique aut dolore ratione aspernatur quas, incidunt, beatae explicabo eligendi debitis numquam?
 
                 </Typography>
               </div>
@@ -86,16 +97,22 @@ export default class Portfolio extends React.Component<Props, State> {
           </div>
             <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x'}}>  Source code, license and usage </Typography>
                 <Typography variant='body1' color="textSecondary" style={{paddingTop: '10x', width: '100%'}}>
-                First and foremost, the beautiful blue mountain background used for the header of this portfolio was created by Ibin Siraj, downloaded from Pexels.
-
-                I occasionally recieve requests for my codebase and while I am more than happy to oblige you are welcome to view my projects/other work through my Github. However please note that this website is unfortunately the only exception.
-
-                The reason being is that I had spent a lot of time in developing & designing this website. It is my portfolio that serves as proof of what separates me from my competition and is a reflection of the quality of work my client can expect from me. For these reasons I am reluctant to share the codebase
-
-                Off course, this being a website, you can freely look at the HTML, CSS & JS source through your browsers dev console. I'm flattered if you want to use the general design layout and/or wording into your own project as inspiration but please do not use wget to obtain my entire site.
-
-              
-                I’d be interested to hear what you think about this and I'm also open to some constructive feedback. Please get in touch with me through here to discuss. Furthermore, if there’s something on this site you like and you want help doing something similar, please let me know.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dicta distinctio praesentium, delectus nisi ratione accusantium. Incidunt culpa iusto consectetur repellendus consequuntur, aliquid vero optio vitae minima tempore adipisci in.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et? Veritatis et quae, accusantium maiores unde ducimus odio nemo, at eum minus quam aliquam quis mollitia sit quaerat, non eos.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore culpa quasi rem totam commodi odit et! Qui aperiam voluptatum modi repellendus! Ratione perferendis quibusdam debitis libero excepturi molestiae qui sed?
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quod vitae? Maxime doloremque eos unde, corporis sint temporibus. Perspiciatis officia suscipit explicabo autem quas aliquam ad asperiores eligendi sunt sed!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a ea laboriosam vel molestias rerum, sequi cum possimus nisi. Atque tempora aspernatur voluptatem non rem qui voluptatum quas illum officia?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi sint perspiciatis exercitationem inventore aspernatur vitae unde ex et. Voluptate est harum veritatis explicabo reiciendis! Est cumque culpa recusandae inventore?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum numquam dolores nihil voluptate reiciendis, optio, cupiditate id necessitatibus velit obcaecati est, facere quam. Aut adipisci eius nesciunt cumque dicta.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab exercitationem architecto culpa nobis, provident voluptatibus, ipsam assumenda reprehenderit eveniet consequatur quos accusantium, tempora dolorum maxime tenetur cupiditate laboriosam nesciunt. Sit?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatum tempora explicabo, dignissimos, sapiente sint facere ab fugiat consequuntur commodi non maiores asperiores incidunt dolores numquam dicta quisquam perferendis? Praesentium.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea explicabo eius asperiores labore et sed nisi quisquam. Asperiores animi omnis aspernatur voluptate sit recusandae minima excepturi impedit maxime quis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos reiciendis quidem? Quas quia ipsa dolorum dolores nobis aliquid iste eveniet, nostrum rerum numquam labore dolore ad inventore, laboriosam quidem.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione qui natus adipisci praesentium minima reiciendis sequi odio! Similique libero mollitia accusantium autem quos laudantium quod eveniet nesciunt. Eius, nesciunt.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatibus numquam alias molestiae et deserunt ullam, a ea sed, itaque molestias esse dolores! Temporibus, ullam quod! Aperiam assumenda maiores explicabo?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, animi! Sapiente amet ad, nam omnis non corrupti voluptates minima incidunt. Ad magnam ut cum eius necessitatibus quos, id reiciendis dicta?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quasi dolores, repudiandae perspiciatis vitae debitis! Vero saepe corrupti similique aut dolore ratione aspernatur quas, incidunt, beatae explicabo eligendi debitis numquam?
+                  
                 </Typography>
         </div>
         <Footer/>
