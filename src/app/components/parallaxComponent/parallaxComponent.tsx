@@ -32,7 +32,7 @@ const parallaxData = [
     ]
   }
 ]
-export default class Project extends React.Component<Props, State> {
+export default class parallaxComponent extends React.Component<Props, State> {
   render(){
     return(
         <Plx

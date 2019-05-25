@@ -2,3 +2,6 @@
   width:50px;
   margin: 5px;
 }
+.buttons{
+  display: flex;
+}

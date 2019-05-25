@@ -14,6 +14,10 @@
 
 }
 
+.card.cropped {
+  margin: 40vh 25px 0 25px;
+}
+
 .smallCard {
   margin-top: 0;
 

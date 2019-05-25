@@ -4,7 +4,7 @@ import globalStyles from '../../globalStyles.module.css'
 import * as React from 'react'
 import {Link} from 'react-router-dom'
 import Header from '../../components/header'
-import Plx from 'react-plx'
+import Parallax from '../../components/parallaxComponent'
 import Footer from '../../components/footerComponent';
 import MyImage from '../../../media/pubg.png'
 import MyImage2 from '../../../media/portfolio.png'
@@ -140,15 +140,12 @@ export default class Home extends React.Component<Props, State> {
       <div id={styles.big} >
         <Header />
 
-        <Plx
-          className={ styles.divBG }
-          parallaxData={ parallaxData }
-        >
+        <Parallax>
         <div className={styles.looking} id={styles.inlooking}>
           <Typography variant='h1' color="textPrimary" > A la recherche d'un developpeur web?</Typography>
           <Typography variant='body1' color="textPrimary"> Salut, c'est Guillaume GUARD.je crée des aplications web de A a Z!</Typography>
         </div>
-         </Plx>
+        </Parallax>
 
         <div className={ globalStyles.card }>
 

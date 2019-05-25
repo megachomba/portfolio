@@ -1,4 +1,4 @@
-import styles from './portfolio.module.css'
+import styles from './ikkai.module.css'
 import globalStyles from '../../../globalStyles.module.css'
 
 import * as React from 'react'
@@ -18,14 +18,12 @@ import MyImage from '../../../../media/pubg.png'
 import MyImage2 from '../../../../media/portfolio.png'
 import MyImage3 from '../../../../media/ikkai.png'
 import Techselector from '../../../components/techselector';
-import { observer, inject } from 'mobx-react';
-import RootStore from '../../../stores/rootstore';
 
 
 
 
 interface Props{
-  rootStore?: RootStore
+
 }
 interface State{
 
@@ -47,15 +45,13 @@ const StyledToolTip= withStyles({
   }
 })(Tooltip);
 
+
 const reactT =[{
   name: 'frontend', 
   src : MyImage3,
   title: 'notitle'
 }]
-
-@inject('rootStore')
-@observer
-export default class Portfolio extends React.Component<Props, State> {
+export default class Ikkai extends React.Component<Props, State> {
 
   render() {
     return(
@@ -63,7 +59,7 @@ export default class Portfolio extends React.Component<Props, State> {
         <Header></Header>
         <Parallax>
         <div className={styles.looking} id={styles.inlooking}>
-          <Typography variant='h1' color="textPrimary" > Portfolio</Typography>
+          <Typography variant='h1' color="textPrimary" > ikkai</Typography>
         </div>
         </Parallax>
         <div className={globalStyles.card}>
@@ -71,15 +67,15 @@ export default class Portfolio extends React.Component<Props, State> {
               <div className={styles.lateral}>
               
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > Année</Typography>
-                <Typography variant='h6' color="textSecondary" style={{paddingTop: '10x'}} > 2019</Typography>
+                <Typography variant='h6' color="textSecondary" style={{paddingTop: '10x'}} > 2018</Typography>
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}} > URL</Typography>
-                <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}> <a href="http://www.guillaumeguard.fr"> www.guillaumeguard.fr</a></Typography>
+                <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}> <a href="http://www.ikkai.com"> www.ikkai.com</a></Typography>
               </div>
               <div className={styles.presentation}>
               
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}}> PRESENTATION</Typography>
-                <Techselector frontend={['react','mobx','typescript']}  devops={['ubuntu']}/>
-                <img src={MyImage2} className={styles.bigimage}></img>
+                <Techselector frontend={['react']} backend={['typescript']} devops={['mobx']}/>
+                <img src={MyImage3} className={styles.bigimage}></img>
 
                 <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x' , fontWeight: 'bold'}}>Codebase </Typography>
                 <Typography variant='body1' color="textSecondary" style={{paddingTop: '10px'}}>

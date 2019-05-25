@@ -23,8 +23,13 @@ import DonutIcon from '@material-ui/icons/DonutLarge';
 
 
 import SwipeableViews from 'react-swipeable-views';
+import RootStore from '../../stores/rootstore';
+import { inject, observer } from 'mobx-react';
 interface Props{
-
+  rootStore?: RootStore,
+  frontend?: string[],
+  backend?: string[],
+  devops?: string[],
 }
 interface State{
   current: string,
@@ -81,8 +86,8 @@ const box = {
   boxShadow: 'rgba(0, 0, 0, 0.14) 0px 4px 20px 0px, rgba(255, 152, 0, 0.4) 0px 7px 10px -5px'
 }
 
-
-
+@inject('rootStore')
+@observer
 export default class Techselector extends React.Component<Props, State> {
   constructor(props: Props){
     super(props)
@@ -104,52 +109,66 @@ export default class Techselector extends React.Component<Props, State> {
   render(){
     return(
       <div>
-        <StyledButton 
-          variant="contained" 
-          color="secondary" 
-          style={(this.state.current==='frontend')? box : { backgroundColor: 'transparent'}} 
-          onClick={(e:any)=>this.handleclick('frontend',0)}>
-          Frontend
-        <StyledPaint />
-        </StyledButton>
+        <div className={styles.buttons}>
+          { this.props.frontend ? <StyledButton 
+            variant="contained" 
+            color="secondary" 
+            style={(this.state.current==='frontend')? box : { backgroundColor: 'transparent'}} 
+            onClick={(e:any)=>this.handleclick('frontend',0)}>
+            Frontend
+          <StyledPaint />
+          </StyledButton> : <div />}
 
-        <StyledButton 
-          variant="contained" 
-          color="primary" 
-          style={(this.state.current==='backend')? box : { backgroundColor: 'transparent'}} 
-          onClick={(e:any)=>this.handleclick('backend',1)}>
-          Backend
-          <StyledDonut />
-        </StyledButton >
+          { this.props.backend ? <StyledButton 
+            variant="contained" 
+            color="primary" 
+            style={(this.state.current==='backend')? box : { backgroundColor: 'transparent'}} 
+            onClick={(e:any)=>this.handleclick('backend',1)}>
+            Backend
+            <StyledDonut />
+            </StyledButton> : <div />}
 
-        <StyledButton 
-          variant="contained" 
-          color="primary" 
-          style={(this.state.current==='devops')? box : { backgroundColor: 'transparent'}} 
-          onClick={(e:any)=>this.handleclick('devops',2)}>
-          DevOps
-        <StyledCloud />
-        </StyledButton>
-
-        <SwipeableViews index={this.state.index}>
+            { this.props.devops ? <StyledButton 
+            variant="contained" 
+            color="primary" 
+            style={(this.state.current==='devops')? box : { backgroundColor: 'transparent'}} 
+            onClick={(e:any)=>this.handleclick('devops',2)}>
+            DevOps
+          <StyledCloud />
+          </StyledButton> : <div />}
+          </div>
+          <SwipeableViews index={this.state.index}>
         <div >
-          <StyledToolTip title='React'>
-          <img className={styles.images} src={ReactI}></img>
-          </StyledToolTip>
-          <StyledToolTip title='Mobx'>
-          <img className={styles.images} src={MobxI}></img>
-          </StyledToolTip>
-          <StyledToolTip title='Typescript'>
-          <img className={styles.images} src={TypeScriptI}></img>
-          </StyledToolTip>
-          
+
+          {
+            this.props.frontend ? this.props.frontend.map((item, key)=>{
+             return (<StyledToolTip title={this.props.rootStore!.techStore.technos.get(item)!.title}>
+                <img className={styles.images} src={this.props.rootStore!.techStore.technos.get(item)!.src}></img>
+             </StyledToolTip>)
+            }) : <div />
+             
+          }
           
         </div>
         <div>
-        
+        {
+            this.props.backend ? this.props.backend.map((item, key)=>{
+              return (<StyledToolTip title={this.props.rootStore!.techStore.technos.get(item)!.title}>
+                 <img className={styles.images} src={this.props.rootStore!.techStore.technos.get(item)!.src}></img>
+              </StyledToolTip>)
+             }) : <div />
+             
+          }
         </div>
         <div>
-          slide n°3
+        {
+           this.props.devops ? this.props.devops.map((item, key)=>{
+            return (<StyledToolTip title={this.props.rootStore!.techStore.technos.get(item)!.title}>
+               <img className={styles.images} src={this.props.rootStore!.techStore.technos.get(item)!.src}></img>
+            </StyledToolTip>)
+           }) : <div />
+             
+          }
         </div>
         </SwipeableViews>
       </div>
