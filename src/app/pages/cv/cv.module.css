@@ -1,0 +1,29 @@
+.thirdBlock{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.dog{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -97px;
+}
+.dogImage{
+    border-radius: 50%;
+    max-width: 100px;
+}
+.cvBlock{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.cvBlockColumn {
+    width: 100px;
+}
+.cvBlockText {
+    margin-left: 20px;
+    text-align: left;
+}

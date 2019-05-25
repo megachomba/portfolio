@@ -1,0 +1,30 @@
+{
+    "portfolio":
+        {
+            "cv":
+                {
+                    "altran":
+                        {
+                            "line1": "-Frontend devlopper",
+                            "line2": "-tecnhonologies used: React-Typsecrit, Mobx, Css, Html5, git, ubuntu, docker, swagger, angular7, material-UI",
+                            "line3": "-Writing of unitary tests with Jest and Enyzme",
+                            "line4": "-technical documentation writing",
+                            "line5": "-Client Demos presentation , feedback writing and app debugging",
+                            "line6": "-Working  for important clients such as Airbus in an Agile Environment, with features delivered after each sprint",
+
+
+                        },
+                        "ikkai":
+                        {
+                            "line1": "-Fullstack developper",
+                            "line2": "-tecnhonologies used: React, Redux, Sass, Html5, git, ubuntu, docker, bootstrap, webpack, django,mongoDB, AWS, postgresSQL",
+                            "line3": "-technical documentation writing",
+                            "line4": "-devlopping new features such as questionaries and map interactions",
+                            "line5": "-debugging, database creation",
+                            "line6": "Other tecnhonologies used: git, ubuntu, docker, swagger, angular7, material-UI"
+
+                        }
+                    
+                }
+        }
+}

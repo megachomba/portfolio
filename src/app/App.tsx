@@ -12,7 +12,7 @@ import Ikkai from './pages/project/ikkai'
 import pubg from './pages/project/pubg'
 import RootStore from './stores/rootstore'
 import Cv from './pages/cv'
-
+import './utils/i18n'
 export default class App extends Component {
   render() {
     return (
