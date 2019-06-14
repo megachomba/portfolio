@@ -6,7 +6,10 @@ import {Link} from 'react-router-dom'
 import Header from '../../components/header'
 import Parallax from '../../components/parallaxComponent'
 import Footer from '../../components/footerComponent'
-import MyImage from '../../../media/react.png'
+import Ireact from '../../../media/react.png'
+import Imobx from '../../../media/mobx.png'
+import ItypeScript from '../../../media/typescript.png'
+
 import MyImage2 from '../../../media/portfolio.png'
 import MyImage3 from '../../../media/ikkai.png'
 import MyImage4 from '../../../media/altran.jpeg'
@@ -24,11 +27,6 @@ import Typography from '@material-ui/core/Typography'
 import { CardMedia, Popover, Tooltip, Button } from '@material-ui/core'
 import i18n from 'i18next'
 
-const StyledToolTip= withStyles({
-  tooltip: {
-    fontSize: '23px'
-  }
-})(Tooltip);
 interface Props {}
 interface State {}
 
@@ -84,33 +82,69 @@ export default class Cv extends React.Component<Props, State> {
               <div className= { styles.cvBlockText }>
                 <Typography variant="h6" color="textSecondary" >06/2018 - 09/2018</Typography>
                 <Typography variant="subtitle2" color="textSecondary" >Ikkai inc</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line1') }</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line2') }</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line3') }</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line4') }</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line5') }</Typography>
-                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line6') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line1') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line2') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line3') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line4') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line5') }</Typography>
+                <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.ikkai.line6') }</Typography>
               </div>            
             </div>
 
             <Typography className= { styles.workHistory } variant='h4' color="textSecondary" >Technologies i've used</Typography>
-            <div className={ styles.cards }>
-              <div className={ styles.innerCardTop }>
-                <Link to='project/pubg'>
-                    <StyledToolTip title='la description de pubg'>
-                      <CardMedia
-                      component="img"
-                      image={ MyImage }
-                      />
-                    </StyledToolTip>
-                </Link>
-              </div>
-              <div className={ styles.innerCardBot }>
+            
+            <div className={ styles.cardBlock }>
 
-            <Typography variant='h5' color="textPrimary" >REACT</Typography>
-            <Typography variant='h5' color="textPrimary" >9 months</Typography>
+              <div className={ styles.cards }>
+                <div className={ styles.innerCardTop }>
+
+                    <CardMedia
+                      className={ styles.images }
+                      component="img"
+                      image={ Ireact } />
+
+
+                </div>
+                <div className={ styles.innerCardBot }>
+
+                  <Typography variant='h5' color="textPrimary" >REACT</Typography>
+                  <Typography variant='h5' color="textPrimary" >9 months</Typography>
+                </div>
+              </div>
+
+              <div className={ styles.cards }>
+                <div className={ styles.innerCardTop }>
+
+                      <CardMedia
+                        className={ styles.images }
+                        component="img"
+                        image={ Imobx } />
+
+                </div>
+                <div className={ styles.innerCardBot }>
+
+                  <Typography variant='h5' color="textPrimary" >Mobx</Typography>
+                  <Typography variant='h5' color="textPrimary" >6 months</Typography>
+                </div>
+              </div>
+
+              <div className={ styles.cards }>
+                <div className={ styles.innerCardTop }>
+
+                      <CardMedia
+                        className={ styles.images }
+                        component="img"
+                        image={ ItypeScript } />
+
+                </div>
+                <div className={ styles.innerCardBot }>
+
+                  <Typography variant='h5' color="textPrimary" >typescript</Typography>
+                  <Typography variant='h5' color="textPrimary" >6 months</Typography>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
         <Footer/>

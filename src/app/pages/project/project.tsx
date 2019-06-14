@@ -15,6 +15,7 @@ import { CardMedia, Tooltip } from '@material-ui/core';
 import MyImage from '../../../media/pubg.png'
 import MyImage2 from '../../../media/portfolio.png'
 import MyImage3 from '../../../media/ikkai.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -65,28 +66,31 @@ export default class Project extends React.Component<Props, State> {
               
               
               <div className={styles.comunication}>
-                <StyledToolTip title='la description de pubg'>
-                  <CardMedia
-                  component="img"
-                  image={ MyImage }
-                  />
-                </StyledToolTip>
+                <Link to='project/pubg'>
+                  <StyledToolTip title='la description de pubg'>
+                    <CardMedia
+                      component="img"
+                      image={ MyImage } />
+                  </StyledToolTip>
+                </Link>
               </div>
               <div className={styles.comunication}>
-              <StyledToolTip title='la description du portfolio'>
-                  <CardMedia
-                  component="img"
-                  image={ MyImage2 }
-                  />
-                </StyledToolTip>
+                <Link to='project/portfolio'>
+                    <StyledToolTip title='la description de portfolio'>
+                      <CardMedia
+                        component="img"
+                        image={ MyImage2 } />
+                    </StyledToolTip>
+                  </Link>
               </div>
               <div className={styles.comunication}>
-                <StyledToolTip title='la description de ikkai'>
-                  <CardMedia
-                  component="img"
-                  image={ MyImage3 }
-                  />
-                </StyledToolTip>
+                <Link to='project/ikkai'>
+                  <StyledToolTip title='la description de ikkai'>
+                    <CardMedia
+                      component="img"
+                      image={ MyImage3 } />
+                  </StyledToolTip>
+                </Link>
               </div>
             </div>
         </div>
