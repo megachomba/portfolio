@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import Header from '../../components/header'
 import Parallax from '../../components/parallaxComponent'
 import Footer from '../../components/footerComponent'
-import MyImage from '../../../media/pubg.png'
+import MyImage from '../../../media/react.png'
 import MyImage2 from '../../../media/portfolio.png'
 import MyImage3 from '../../../media/ikkai.png'
 import MyImage4 from '../../../media/altran.jpeg'
@@ -24,7 +24,11 @@ import Typography from '@material-ui/core/Typography'
 import { CardMedia, Popover, Tooltip, Button } from '@material-ui/core'
 import i18n from 'i18next'
 
-
+const StyledToolTip= withStyles({
+  tooltip: {
+    fontSize: '23px'
+  }
+})(Tooltip);
 interface Props {}
 interface State {}
 
@@ -87,6 +91,25 @@ export default class Cv extends React.Component<Props, State> {
                 <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line5') }</Typography>
                 <Typography variant="body1" color="textSecondary" >{ i18n.t('cv.altran.line6') }</Typography>
               </div>            
+            </div>
+
+            <Typography className= { styles.workHistory } variant='h4' color="textSecondary" >Technologies i've used</Typography>
+            <div className={ styles.cards }>
+              <div className={ styles.innerCardTop }>
+                <Link to='project/pubg'>
+                    <StyledToolTip title='la description de pubg'>
+                      <CardMedia
+                      component="img"
+                      image={ MyImage }
+                      />
+                    </StyledToolTip>
+                </Link>
+              </div>
+              <div className={ styles.innerCardBot }>
+
+            <Typography variant='h5' color="textPrimary" >REACT</Typography>
+            <Typography variant='h5' color="textPrimary" >9 months</Typography>
+              </div>
             </div>
           </div>
         </div>

@@ -23,7 +23,23 @@
 .cvBlockColumn {
     width: 100px;
 }
+
 .cvBlockText {
     margin-left: 20px;
     text-align: left;
+}
+
+.cards {
+    width: 33%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerCardTop {
+}
+.innerCardBot {
+    padding: 10px;
+    background-color: #353535; 
 }
