@@ -70,7 +70,7 @@ export default class Pubg extends React.Component<Props, State> {
               <div className={styles.presentation}>
               
                 <Typography variant='h5' color="textSecondary" style={{fontWeight: 'bold'}}> PRESENTATION</Typography>
-         
+                <Techselector frontend={['react','mobx','typescript']}  devops={['ubuntu']}/>
                 <img src={MyImage} className={styles.bigimage}></img>
 
                 <Typography variant='h5' color="textSecondary" style={{paddingTop: '10x' , fontWeight: 'bold'}}>Codebase </Typography>
